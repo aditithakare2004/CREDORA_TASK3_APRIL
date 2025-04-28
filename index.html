@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="mode-select">
+      <label for="mode">Select Mode:</label>
+      <select id="mode">
+        <option value="human">Two Players</option>
+        <option value="ai">Single Player (vs AI)</option>
+      </select>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <div id="status"></div>
+
+    <div class="scoreboard">
+      <p>X Wins: <span id="xWins">0</span></p>
+      <p>O Wins: <span id="oWins">0</span></p>
+    </div>
+
+    <button id="resetButton">Reset Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
